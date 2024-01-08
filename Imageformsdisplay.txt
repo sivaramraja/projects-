@@ -1,0 +1,21 @@
+/*	read_image_file('C:\Users\santhoshkumar.ar\Documents\PHOTO\ *.JPG'||'any','PHOTO');
+*/
+DECLARE
+	PIC BLOB;
+	AADHAR_PIC BLOB;
+	INCOME_CER BLOB;
+	SIGN BLOB;
+BEGIN
+    -- Prompt user to select a photo file
+   READ_IMAGE_FILE('C:\Users\santhoshkumar.ar\Documents\PHOTO\'||:ISF_DOCUMENT.CUST_NAME||'.JPG', 'ANY', 'PHOTO');
+   READ_IMAGE_FILE('C:\Users\santhoshkumar.ar\Documents\AADHAR\'||:ISF_DOCUMENT.CUST_NAME||'_AADHAR'||'.JPG', 'ANY', 'AADHAR_PHOTO');
+   READ_IMAGE_FILE('C:\Users\santhoshkumar.ar\Documents\INCOME_CER\'||:ISF_DOCUMENT.CUST_NAME||'_INCOME_CER'||'.JPG', 'ANY', 'INCOME_CERTIFICATE');
+   READ_IMAGE_FILE('C:\Users\santhoshkumar.ar\Documents\SIGN\'||:ISF_DOCUMENT.CUST_NAME||'_SIGN'||'.JPG', 'ANY', 'SIGNATURE');
+    -- Insert data into the database or do further processing as needed
+    -- (Assuming you have a table structure and sequence for generating CUST_ID)
+   INSERT INTO ISF_DOCUMENT(PHOTO,AADHAR_PHOTO,INCOME_CERTIFICATE,SIGNATURE) VALUES (PIC,AADHAR_PIC,INCOME_CER,SIGN );
+    -- Commit the transaction
+    COMMIT;
+    -- Display a success message
+    MESSAGE('Image inserted successfully.', NO_ACKNOWLEDGE);
+END;

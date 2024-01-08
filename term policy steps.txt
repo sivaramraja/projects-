@@ -1,0 +1,54 @@
+STEP - 1
+Enter the customer details in the necessary block.
+The Full name, mobile number, email, pin code, date of birth can be entered.
+The gender can be chosen from the List of values.
+Age will be auto- populated when date of birth is entered.
+
+STEP - 2
+Click NEXT button to continue the process.
+The process is saved and the “TRANSACTION COMPLETED” dialogue box appears as in above screen.
+
+STEP - 3
+The Education and occupation details can be filled in details tab.
+Enter the Annual income of the customer.
+Education and occupation can be selected from the LIST OF VALUES.
+Occupation is chosen as “business”.
+
+STEP -4
+The process is saved, “TRANSACTION COMPLETED” dialogue box appears as in above screen.
+
+STEP - 5
+Premium details and Life cover amount can be entered in the above tab.
+Enter the Life cover amount, Cover till age, Premium amount can be entered.
+The payment mode can be chosen from LIST OF VALUES.
+
+STEP - 6
+The process is saved, “TRANSACTION COMPLETED” dialogue box appears as in above screen.
+
+STEP - 7 
+The Extra benefits for the term policy can be covered.
+The extra benefits can be chosen in this tab.
+The extra benefits included for this term policy are “Critical illness, terminal illness, ADB Rider, WOP Rider”
+
+STEP - 8
+The customer should enter their mobile number and the documents can be uploaded.
+Click on “NEXT” button to continue 
+
+STEP - 9
+The Customer details are auto- populated and can be verified this tab.
+Choose ENTER. Select the customer from the LIST OF VALUES.
+The full name, mobile number, life cover amount, cover till age, premium amount, payment mode will be auto- populated.
+
+STEP -10
+The payment details can be updated in the payment tab.
+The payment method can be chosen form the LIST OF VALUES.
+The bank name, holder name, account number can be entered.
+
+STEP - 11
+Click SUBMIT to save the policy.
+The policy is saved, “POLICY ISSUED’ dialogue box appears as in above screen.
+
+NO
+When no rider is chosen “No changes to save” dialogue box appears as in above screen.
+
+

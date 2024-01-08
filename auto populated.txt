@@ -1,0 +1,40 @@
+
+
+/*Autopopulate AGE based on DOB:
+
+Open the "Triggers" node in the Object Navigator.
+
+Add a new "When-Validate-Item" trigger for the DOB item.*/
+
+--Write the following PL/SQL code:
+
+    :ISF_CUSTOMER_DETAILS.AGE := TRUNC(MONTHS_BETWEEN(SYSDATE, :ISF_CUSTOMER_DETAILS.DOB) / 12);
+  
+--Create an Insert Button:
+
+/*Add a button to the canvas.
+
+Open the "Triggers" node in the Object Navigator.
+
+Add a new "When-Button-Pressed" trigger for the button.
+
+Write the following PL/SQL code:*/
+===========================================================================================================
+
+BEGIN
+	INSERT INTO CUSTOMER_DETAILS(FULLNAME,MOBILE_NUMBER, EMAIL, DOB, PINCODE, GENDER, NRI)
+  VALUES (:CUSTOMER_DETAILS.fullname,:CUSTOMER_DETAILS.mobile_number,:CUSTOMER_DETAILS.email,:CUSTOMER_DETAILS.dob, :CUSTOMER_DETAILS.pincode, :CUSTOMER_DETAILS.gender,:CUSTOMER_DETAILS.nri);
+ COMMIT;
+ END;
+=======================================================================================================
+
+
+DECLARE
+    x NUMBER;
+BEGIN
+    SELECT  INTO x FROM agent_customer_details; -- Replace 'your_table_name' with the actual table name
+
+    :DASHBOARD.total_policies := TO_number(x);
+
+END;
+=======================================================================================================

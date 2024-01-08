@@ -1,0 +1,6 @@
+FRM-30180: No radio buttons in the radio group.
+Radio Group RADIO_GROUP18
+Item: RADIO_GROUP18
+Block: ISF_BANK_DETAILS
+Form: ISF_PAYMENT
+FRM-30085: Unable to adjust form for output.
